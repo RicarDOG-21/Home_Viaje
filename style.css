@@ -1,0 +1,190 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to top, transparent, rgba(239,46,28,.5)), url(img/fondo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1000px;
+    background-color: rgba(0, 0, 0, .7);
+    border-radius: 30px;
+    padding: 50px;
+    color: #fff;
+}
+
+header {
+    display: block;
+}
+
+.container header {
+    overflow: hidden;
+}
+
+.container header h1 {
+    float: left;
+}
+
+.container header nav {
+    float: left;
+}
+
+.container header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.container header nav ul li {
+    margin: 0 30px;
+}
+
+.container header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 33px;
+    font-size: 14px;
+    padding: 5px 10px;
+    transition: .5s;
+    border-radius: 20px;
+}
+
+.container header nav ul li a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.container header .search {
+    float: right;
+}
+
+.container header .search input {
+    display: inline-block;
+    width: 200px;
+    border: none;
+    background-color: rgba(0, 0, 0, .4);
+    padding: 7px;
+    outline: none;
+    color: #fff;
+    border-right: 3px;
+    transition: .5s;
+    opacity: 0;
+}
+
+.container header .search:hover input {
+    opacity: 1;
+}
+
+.container header .busqueda {
+    cursor: pointer;
+}
+
+.container .content {
+    display: flex;
+    position: relative;
+}
+
+.container .decoration-line {
+    position: absolute;
+    height: 250px;
+    border-left: 2px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.container .decoration-line .circule {
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-left: -9px;
+}
+
+.container .content .left {
+    width: 50%;
+    margin-top: 30px;
+    padding-left: 50px;
+}
+
+.container .content .left h2 {
+    padding-top: 60px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.container .content .left p {
+    margin-bottom: 60px;
+    font-size: 14px;
+}
+
+.container .content .left button {
+    display: inline-block;
+    padding: 5px 20px;
+    margin-bottom: 60px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    color: #fff;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.container .content .left button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.container .content .left .webs {
+    font-size: 12px;
+    padding-bottom: 7px;
+    border-bottom: 2px solid #fff;
+    width: 100px;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.container .content .left .webs a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container .content .right {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.container .content .right .popular {
+    border-bottom: 2px solid #fff;
+    width: 100px;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+}
+
+.container .content .right .img-container {
+    display: flex;
+    justify-content: end;
+}
+
+.container .content .right .img-container img {
+    width: 25%;
+    margin: 0 10px;
+    border-radius: 10px;
+}
